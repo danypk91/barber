@@ -4,19 +4,22 @@
 @stop
 
 @section('content')
-    <table id="bootstrap-data-table" class="table table-striped table-bordered"></table>
+    <table id="bootstrap-data-tables" class="table table-striped table-bordered"></table>
 @stop
 
 @section('script')
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#bootstrap-data-table').DataTable({
+            $('#bootstrap-data-tables').DataTable({
                 "processing": true,
                 "serverSide": true,
                 "ajax": {
                     "url": "clienti/list",
                     "type": "POST"
                 },
+                "columns":[
+                    {"data":"id","title":"ID"}
+                ]
             });
         } );
     </script>
