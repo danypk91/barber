@@ -102,7 +102,7 @@
                         <div class="dropdown-menu" aria-labelledby="message">
                             <p class="red">You have 4 Mails</p>
                             <a class="dropdown-item media bg-flat-color-1" href="#">
-                                <span class="photo media-left"><img alt="avatar" src="images/avatar/1.jpg"></span>
+                                <!--<span class="photo media-left"><img alt="avatar" src="images/avatar/1.jpg"></span>-->
                                 <span class="message media-body">
                                     <span class="name float-left">Jonathan Smith</span>
                                     <span class="time float-right">Just now</span>
@@ -110,7 +110,7 @@
                                 </span>
                             </a>
                             <a class="dropdown-item media bg-flat-color-4" href="#">
-                                <span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>
+                            <!--<span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>-->
                                 <span class="message media-body">
                                     <span class="name float-left">Jack Sanders</span>
                                     <span class="time float-right">5 minutes ago</span>
@@ -118,7 +118,7 @@
                                 </span>
                             </a>
                             <a class="dropdown-item media bg-flat-color-5" href="#">
-                                <span class="photo media-left"><img alt="avatar" src="images/avatar/3.jpg"></span>
+                                <!--<span class="photo media-left"><img alt="avatar" src="images/avatar/3.jpg"></span>-->
                                 <span class="message media-body">
                                     <span class="name float-left">Cheryl Wheeler</span>
                                     <span class="time float-right">10 minutes ago</span>
@@ -126,7 +126,7 @@
                                 </span>
                             </a>
                             <a class="dropdown-item media bg-flat-color-3" href="#">
-                                <span class="photo media-left"><img alt="avatar" src="images/avatar/4.jpg"></span>
+                                <!--<span class="photo media-left"><img alt="avatar" src="images/avatar/4.jpg"></span>-->
                                 <span class="message media-body">
                                     <span class="name float-left">Rachel Santos</span>
                                     <span class="time float-right">15 minutes ago</span>
@@ -230,6 +230,7 @@
 <script src="/js/lib/data-table/buttons.print.min.js"></script>
 <script src="/js/lib/data-table/buttons.colVis.min.js"></script>
 <script src="/js/lib/data-table/datatables-init.js"></script>
+<script src="/js/lib/data-table/dtable.js"></script>
 <script>
     ( function ( $ ) {
         "use strict";

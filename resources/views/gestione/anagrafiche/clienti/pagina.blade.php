@@ -9,18 +9,19 @@
 
 @section('script')
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('#bootstrap-data-tables').DataTable({
-                "processing": true,
-                "serverSide": true,
-                "ajax": {
-                    "url": "clienti/list",
-                    "type": "POST"
-                },
-                "columns":[
-                    {"data":"id","title":"ID"}
-                ]
-            });
-        } );
+        MyTable("#bootstrap-data-tables",{
+            url:"/clienti/",
+            cols:[
+                {"data":"id","title":"ID"},
+                {"data":"nome","title":"Nome"},
+                {"data":"cognome","title":"Cognome"},
+            ],
+            /*onItemClick:function(item,e){
+                //todo
+                console.log(item);
+                alert("bbb");
+            }*/
+        })
+
     </script>
 @stop

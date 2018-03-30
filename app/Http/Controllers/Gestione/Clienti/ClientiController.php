@@ -9,9 +9,11 @@
 namespace App\Http\Controllers\Gestione\Clienti;
 
 
+use App\Http\Controllers\Controller;
+use App\Repositories\Nominativi\Nominativo;
 use Illuminate\Http\Request;
 
-class ClientiController
+class ClientiController extends Controller
 {
     function __construct(Request $request)
     {
@@ -19,5 +21,10 @@ class ClientiController
     }
     public function index(){
         return view("gestione.anagrafiche.clienti.pagina");
+    }
+
+    public function table(){
+        $items = Nominativo::query();
+        return \DataTables::of($items)->make(true);
     }
 }
