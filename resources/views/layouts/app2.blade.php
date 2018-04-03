@@ -20,10 +20,12 @@
     <link rel="stylesheet" href="/css/cs-skin-elastic.css">
     <link rel="stylesheet" href="/scss/style.css">
     <link href="/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/jquery-ui.css">
 
     @yield('style')
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css">
 </head>
 <body>
 
@@ -206,11 +208,26 @@
 
 <!-- Right Panel -->
 
-<script src="/js/vendor/jquery-2.1.4.min.js"></script>
+<script src="/js/jquery/jquery-2.1.4.min.js"></script>
+
+<script src="/js/jquery/jquery-1.11.3.min.js"></script>
 <script src="/js/popper.min.js"></script>
 <script src="/js/plugins.js"></script>
 <script src="/js/main.js"></script>
 
+
+<script src="/js/lib/data-table/dtable.js"></script>
+<script src="/js/lib/data-table/datatables.min.js"></script>
+<script src="/js/lib/data-table/datatables.min.js"></script>
+<script src="/js/lib/data-table/dataTables.bootstrap.min.js"></script>
+<script src="/js/lib/data-table/dataTables.buttons.min.js"></script>
+<script src="/js/lib/data-table/datatables-init.js"></script>
+<script src="/js/jquery/jquery.blockUI.min.js"></script>
+<script src="/js/jquery/jquery-ui_1.12.1.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
+
+
+<!--
 <script src="/js/lib/chart-js/Chart.bundle.js"></script>
 <script src="/js/dashboard.js"></script>
 <script src="/js/widgets.js"></script>
@@ -219,9 +236,8 @@
 <script src="/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
 <script src="/js/lib/vector-map/country/jquery.vmap.world.js"></script>
 
-<script src="/js/lib/data-table/datatables.min.js"></script>
-<script src="/js/lib/data-table/dataTables.bootstrap.min.js"></script>
-<script src="/js/lib/data-table/dataTables.buttons.min.js"></script>
+
+
 <script src="/js/lib/data-table/buttons.bootstrap.min.js"></script>
 <script src="/js/lib/data-table/jszip.min.js"></script>
 <script src="/js/lib/data-table/pdfmake.min.js"></script>
@@ -229,26 +245,9 @@
 <script src="/js/lib/data-table/buttons.html5.min.js"></script>
 <script src="/js/lib/data-table/buttons.print.min.js"></script>
 <script src="/js/lib/data-table/buttons.colVis.min.js"></script>
-<script src="/js/lib/data-table/datatables-init.js"></script>
-<script src="/js/lib/data-table/dtable.js"></script>
-<script>
-    ( function ( $ ) {
-        "use strict";
+<-->
 
-        jQuery( '#vmap' ).vectorMap( {
-            map: 'world_en',
-            backgroundColor: null,
-            color: '#ffffff',
-            hoverOpacity: 0.7,
-            selectedColor: '#1de9b6',
-            enableZoom: true,
-            showTooltip: true,
-            values: sample_data,
-            scaleColors: [ '#1de9b6', '#03a9f5' ],
-            normalizeFunction: 'polynomial'
-        } );
-    } )( jQuery );
-</script>
+
 @yield('script')
 
 </body>

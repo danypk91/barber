@@ -27,4 +27,7 @@ class ClientiController extends Controller
         $items = Nominativo::query();
         return \DataTables::of($items)->make(true);
     }
+    public function form(){
+        return ['message'=>"aaaa"];
+    }
 }

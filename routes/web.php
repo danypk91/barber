@@ -21,6 +21,7 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/clienti', 'Gestione\Clienti\ClientiController@index');
 Route::get('/clienti/table', 'Gestione\Clienti\ClientiController@table');
+Route::get('/clienti/form', 'Gestione\Clienti\ClientiController@form');
 Route::get('/logout', function(){
     Auth::logout();
     return Redirect::to('login');
