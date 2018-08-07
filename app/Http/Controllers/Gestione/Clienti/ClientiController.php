@@ -29,8 +29,8 @@ class ClientiController extends Controller
     }
     public function getForm(){
         $item = Nominativo::where('id',$this->request->id)->first();
-        //dd($item);
         return view('gestione.anagrafiche.clienti.form',compact('item'));
+
     }
 
     public function postSave(){
