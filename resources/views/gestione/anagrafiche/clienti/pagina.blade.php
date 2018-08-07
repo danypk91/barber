@@ -26,6 +26,9 @@
 
 @section('script')
     <script type="text/javascript">
+        function renderOp(row,display,data){
+            return '<button class="btn btn-primary btn-xs" onclick=progetti_customersUI.formUpdate({id:'+row+'}) type="button"><i class="fa fa-pencil"></i></button>'
+        }
         progetti_customersUI= new CrudUI({
             url:"clienti",
             dialogW:'940',
@@ -33,8 +36,12 @@
                 {"data": "id", "title": "ID"},
                 {"data": "nome", "title": "Nome"},
                 {"data": "cognome", "title": "Cognome"},
+                {"data": "id", "title": "Op",render:renderOp},
             ],
             listElement : '#tabella', //id della tabella per dataTables
+            formID:'myForm'
+
+
         });
         progetti_customersUI.list()
     </script>

@@ -236,8 +236,9 @@ var CrudUI = (function () {
         container = $("#" + this.settings.formWrapper);
         container.attr("title", titolo);
         container.html(content);
-        BootstrapDialog.show({message:"aaaaaaa"});
-        /*container.dialog({
+        //alert("dialog")
+        //BootstrapDialog.show({message:"aaaaaaa"});
+        container.dialog({
             modal: this.settings.dialogModal,
             minHeight: 50,
             create: function () {
@@ -246,7 +247,7 @@ var CrudUI = (function () {
             width: this.settings.dialogW,
             position: this.settings.dialogPosition,
             buttons: buttons
-        });*/
+        });
     };
     CrudUI.prototype.getListInstance = function () {
         return this.listInstance.getInstance();
@@ -303,6 +304,7 @@ var CrudUI = (function () {
         });
     };
     CrudUI.prototype.formUpdate = function (settings) {
+        console.log(settings);
         var _this = this;
         var localSettings = $.extend({
             parms: {}
@@ -392,6 +394,7 @@ var CrudUI = (function () {
         //if (this.obbligatori()){
         console.log("IDFORM: #" + localSettings.formWrapper + " #" + localSettings.formID);
         var data = $("#" + localSettings.formWrapper + " #" + localSettings.formID).serialize();
+        console.log("DATAFORM:",data);
         $.post(localSettings.url + "/" + localSettings.appInsertOrUpdate, data, function (response) {
             //if(settings.onUpdated!=null) {settings.onUpdated(); return ;}
             Message.show(response);
