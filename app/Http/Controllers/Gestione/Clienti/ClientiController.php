@@ -23,11 +23,11 @@ class ClientiController extends Controller
         return view("gestione.anagrafiche.clienti.pagina");
     }
 
-    public function getTable(){
+    public function show(){
         $items = Nominativo::query();
         return \DataTables::of($items)->make(true);
     }
-    public function getForm(){
+    public function form(){
         $item = Nominativo::where('id',$this->request->id)->first();
         return view('gestione.anagrafiche.clienti.form',compact('item'));
 

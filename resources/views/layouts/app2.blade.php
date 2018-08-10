@@ -224,8 +224,7 @@
 <script src="/js/lib/data-table/datatables-init.js"></script>
 <script src="/js/jquery/jquery.blockUI.min.js"></script>
 <script src="/js/jquery/jquery-ui_1.12.1.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
-
+<script src="/js/bootstrap-dialog.min.js"></script>
 
 <!--
 <script src="/js/lib/chart-js/Chart.bundle.js"></script>

@@ -224,6 +224,7 @@ var CrudUI = (function () {
         this.settings[key] = value;
     };
     CrudUI.prototype.renderForm = function (titolo, content, buttons) {
+
         var container = $("#" + this.settings.formWrapper);
         if (container.length == 0) {
             $("body").append('<div id="' + this.settings.formWrapper + '" title="" style="display:none"></div>');
