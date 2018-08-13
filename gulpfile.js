@@ -27,7 +27,7 @@ elixir(function(mix) {
 
 //scriptLibs Task
 //Concat and uglify script libraries
-gulp.task('scriptLibs', function(){
+/*gulp.task('scriptLibs', function(){
     gulp.src([
         'public/js/jquery-1.10.2.min.js',
         'public/js/jquery-ui-1.9.2.custom.min.js',
@@ -57,28 +57,20 @@ gulp.task('scriptLibs', function(){
         .pipe(concat('libs.min.js'))
         .pipe(gulp.dest('public/js'));
 });
-
+*/
 //cssLibs Task
 //concat and uglify css libraries
 gulp.task('cssLibs', function(){
     gulp.src([
-        'public/css/custom-theme/jquery-ui-1.9.2.custom.css',
-        //'public/js/advanced-datatable/css/demo_page.css',
-        //'public/js/advanced-datatable/css/demo_table.css',
-        //'public/js/data-tables/DT_bootstrap.css',
-        'public/css/jquery.contextMenu.min.css',
-        'public/css/chosen.css',
-        'public/css/chosen2.css',
-        'public/js/toastr.min.css',
-        'public/css/bootstrap-select.min.css',
-        'public/js/bootstrap-tagsinput/bootstrap-tagsinput.css',
-        'public/js/bootstrap-wysihtml5/bootstrap-wysihtml5.css',
-        'public/css/bootstrap.min.css',
-        'public/css/bootstrap-dialog.min.css',
-        'public/css/bootstrap-reset.css',
-        'public/css/bootstrap.vertical-tabs.css',
-        'public/css/react-grid-layout/grid.css',
-        'public/css/react-grid-layout/resizable.css'
+        "/css/normalize.css",
+        'public/css/bootstrap.css',
+        "/css/font-awesome.min.css",
+        "/css/themify-icons.css",
+        "/css/flag-icon.min.css",
+        "/css/cs-skin-elastic.css",
+        "/scss/style.css",
+        "/css/lib/vector-map/jqvmap.min.css",
+        "/css/jquery-ui.css",
     ])
         .on('error', errorLog)
         .pipe(minify())
@@ -88,4 +80,4 @@ gulp.task('cssLibs', function(){
 
 });
 
-gulp.task('default', ['scriptLibs','cssLibs']);
+gulp.task('default', ['cssLibs']);

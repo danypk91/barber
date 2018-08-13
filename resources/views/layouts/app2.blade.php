@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/libs.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/themify-icons.css">
     <link rel="stylesheet" href="/css/flag-icon.min.css">
