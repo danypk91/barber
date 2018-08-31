@@ -305,6 +305,9 @@ var CrudUI = (function () {
         });
     };
     CrudUI.prototype.formUpdate = function (settings) {
+        if(settings.id===undefined){
+            return false
+        }
         console.log(settings);
         var _this = this;
         var localSettings = $.extend({

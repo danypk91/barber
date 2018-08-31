@@ -5,22 +5,20 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="/img/profile/max.jpg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Barber - @yield('title','Home')</title>
-    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/img/profile/max.jpg" type="image/png">
 
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
 
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/themify-icons.css">
     <link rel="stylesheet" href="/css/flag-icon.min.css">
     <link rel="stylesheet" href="/css/cs-skin-elastic.css">
-    <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
     <link rel="stylesheet" href="/scss/style.css">
     <link href="/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/jquery-ui.css">
@@ -31,6 +29,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css">
 
 </head>
+<body class="open">
 
 
 <!-- Left Panel -->
@@ -115,7 +114,7 @@
                                 </span>
                             </a>
                             <a class="dropdown-item media bg-flat-color-4" href="#">
-                            <!--<span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>-->
+                                <!--<span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>-->
                                 <span class="message media-body">
                                     <span class="name float-left">Jack Sanders</span>
                                     <span class="time float-right">5 minutes ago</span>
@@ -186,39 +185,24 @@
     </header><!-- /header -->
     <!-- Header-->
 
-    <div class="breadcrumbs">
-        <div class="col-sm-4">
-            <div class="page-header float-left">
-                <div class="page-title">
-                    <h1>Dashboard</h1>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-8">
-            <div class="page-header float-right">
-                <div class="page-title">
-                    <ol class="breadcrumb text-right">
-                        <li class="active">Dashboard</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="content mt-3">
-        @yield('content')
+        <div style="float: left; width:15%" id="table-filter">
+            @yield('left-bar')
+        </div>
+        <div style="float: right;width:84%">
+            @yield('content')
+        </div>
+
     </div> <!-- .content -->
 </div><!-- /#right-panel -->
 
 <!-- Right Panel -->
 
 <script src="/js/jquery/jquery-2.1.4.min.js"></script>
-
 <script src="/js/jquery/jquery-1.11.3.min.js"></script>
 <script src="/js/popper.min.js"></script>
 <script src="/js/plugins.js"></script>
 <script src="/js/main.js"></script>
-
-
 <script src="/js/lib/data-table/dtable.js"></script>
 <script src="/js/lib/data-table/datatables.min.js"></script>
 <script src="/js/lib/data-table/datatables.min.js"></script>
@@ -227,29 +211,8 @@
 <script src="/js/lib/data-table/datatables-init.js"></script>
 <script src="/js/jquery/jquery.blockUI.min.js"></script>
 <script src="/js/jquery/jquery-ui_1.12.1.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
-
-
-<!--
-<script src="/js/lib/chart-js/Chart.bundle.js"></script>
-<script src="/js/dashboard.js"></script>
-<script src="/js/widgets.js"></script>
-<script src="/js/lib/vector-map/jquery.vmap.js"></script>
-<script src="/js/lib/vector-map/jquery.vmap.min.js"></script>
-<script src="/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
-<script src="/js/lib/vector-map/country/jquery.vmap.world.js"></script>
-
-
-
-<script src="/js/lib/data-table/buttons.bootstrap.min.js"></script>
-<script src="/js/lib/data-table/jszip.min.js"></script>
-<script src="/js/lib/data-table/pdfmake.min.js"></script>
-<script src="/js/lib/data-table/vfs_fonts.js"></script>
-<script src="/js/lib/data-table/buttons.html5.min.js"></script>
-<script src="/js/lib/data-table/buttons.print.min.js"></script>
-<script src="/js/lib/data-table/buttons.colVis.min.js"></script>
-<-->
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap-dialog.min.js"></script>
 
 @yield('script')
 

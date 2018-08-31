@@ -3,6 +3,11 @@
     Clienti
 @stop
 
+@section('left-bar')
+    <div>
+        aaa
+    </div>
+@stop
 @section('content')
     <table id="tabella" class="table table-striped table-bordered table-sm"></table>
     <div class="modal fade">
