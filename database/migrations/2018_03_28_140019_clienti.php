@@ -18,11 +18,11 @@ class Clienti extends Migration
             $table->string('nome');
             $table->string('cognome');
             $table->date('data_nascita')->nullable();
-            $table->string('luogo_nascita');
-            $table->string('sesso');
-            $table->string('indirizzo');
-            $table->string('telefono');
-            $table->string('email');
+            $table->string('luogo_nascita')->nullable();;
+            $table->integer('sesso')->nullable();;
+            $table->string('indirizzo')->nullable();;
+            $table->string('telefono')->nullable();;
+            $table->string('email')->nullable();;
             $table->timestamps();
         });
     }
