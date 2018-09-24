@@ -4,9 +4,17 @@
 @stop
 
 @section('left-bar')
-    <div class="left-panel" >
-        <input id="search" class="input-sm">
-    </div>
+    <form class="filter" id="filter">
+        <div class="form-group">
+            <label for="company" class=" form-control-label">Cerca</label>
+            <input type="text" id="search" placeholder="Cerca" class="form-control">
+            <span class="clearfix"></span>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-outline-secondary btn-sm" style="margin-right: 5px;">Cerca</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" style="margin-right: 5px;">Svuota</button>
+        </div>
+    </form>
 @stop
 @section('content')
     <table id="tabella" class="table table-striped table-bordered table-sm" style="background-color: #fff"></table>
@@ -34,7 +42,7 @@
         function renderOp(row,display,data){
             return '<button class="btn btn-primary btn-xs" onclick=progetti_customersUI.formUpdate({id:'+row+'}) type="button"><i class="fa fa-pencil"></i></button>'
         }
-        progetti_customersUI= new CrudUI({
+        clienti= new CrudUI({
             url:"clienti",
             dialogW:'940',
             cols:[
@@ -46,8 +54,7 @@
             listElement : '#tabella', //id della tabella per dataTables
             formID:'myForm'
 
-
         });
-        progetti_customersUI.list()
+        clienti.list()
     </script>
 @stop

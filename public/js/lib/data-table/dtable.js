@@ -198,7 +198,7 @@ var CrudUI = (function () {
             /**
              * filters settings
              */
-            filterWrapper: "#filtraggio",
+            filterWrapper: "#filter",
             fixedHeader: false,
             /**
              * serverside settings
