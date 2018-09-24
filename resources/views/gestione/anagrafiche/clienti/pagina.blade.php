@@ -4,12 +4,12 @@
 @stop
 
 @section('left-bar')
-    <div>
-        aaa
+    <div class="left-panel" >
+        <input id="search" class="input-sm">
     </div>
 @stop
 @section('content')
-    <table id="tabella" class="table table-striped table-bordered table-sm"></table>
+    <table id="tabella" class="table table-striped table-bordered table-sm" style="background-color: #fff"></table>
     <div class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
