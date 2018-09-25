@@ -30,8 +30,8 @@ elixir(function(mix) {
 gulp.task('scriptLibs', function(){
     gulp.src([
         'public/js/jquery/jquery-1.11.3.min.js',
-        'public/js/plugins.js',
         'public/js/popper.min.js',
+        'public/js/plugins.js',
         'public/js/main.js',
         'public/js/lib/data-table/dtable.js',
         'public/js/lib/data-table/datatables.min.js',
