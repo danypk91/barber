@@ -33,7 +33,6 @@ gulp.task('scriptLibs', function(){
         'public/js/popper.min.js',
         'public/js/plugins.js',
         'public/js/main.js',
-        'public/js/lib/data-table/dtable.js',
         'public/js/lib/data-table/datatables.min.js',
         'public/js/lib/data-table/dataTables.bootstrap.min.js',
         'public/js/lib/data-table/dataTables.buttons.min.js',

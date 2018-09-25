@@ -32,7 +32,7 @@
                 <i class="fa fa-bars"></i>
             </button>
             <a class="navbar-brand" href="./"><img src="/img/profile/max.jpg" class="rounded-circle" alt="Logo"></a>
-            <a class="navbar-brand hidden" href="./"><img src="/img/profile/max.jpg" alt="Logo"></a>
+            <a class="navbar-brand hidden" href="./"><img class="rounded-circle" src="/img/profile/max.jpg" alt="Logo"></a>
         </div>
         <div id="main-menu" class="main-menu collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -189,7 +189,10 @@
 
 <!-- Right Panel -->
 
+<script src="/js/lib/data-table/dtable.js"></script>
 <script src="/js/libs.min.js"></script>
+
+
 <script src="/js/custom.js"></script>
 
 @yield('script')

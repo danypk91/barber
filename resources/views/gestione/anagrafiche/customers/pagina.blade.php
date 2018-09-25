@@ -4,17 +4,19 @@
 @stop
 
 @section('left-bar')
-    <form class="filter" id="filter">
+    <div class="filter" id="filter">
         <div class="form-group" role="">
-            <label for="company" class=" form-control-label">Cerca</label>
-            <input type="text" id="search" placeholder="Cerca" class="form-control">
+            <input type="text" id="search" name="search" placeholder="Cerca" class="form-control">
             <span class="clearfix"></span>
         </div>
-        <div class="btn-group" role="group">
-            <button type="submit" class="btn btn-outline-secondary " ><i class="fa fa-search"></i> Cerca</button>
-            <button type="button" class="btn btn-outline-secondary btn-clean"><i class="fa fa-times"></i> Svuota</button>
+        <div class="form-group btn-group" role="group">
+            <button type="button" onclick="customers.refreshList()" class="btn btn-outline-secondary " ><i class="fa fa-search"></i> Cerca</button>
+            <button type="button" onclick="customers.empty()" class="btn btn-outline-secondary btn-clean"><i class="fa fa-times"></i> Svuota</button>
         </div>
-    </form>
+        <div class="form-group" role="group">
+            <button type="button" onClick="customers.formInsert()" class="btn btn-success btn-block" ><i class="fa fa-plus"></i> Nuovo</button>
+        </div>
+    </div>
 @stop
 @section('content')
     <table id="tabella" class="table table-striped table-bordered table-sm" style="background-color: #fff"></table>

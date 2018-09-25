@@ -140,7 +140,6 @@ var DatatableList = (function () {
             _this.refresh();
         };
         var refreshFuncSend = function (e) {
-            console.log(e.keyCode);
             if (e.keyCode == 13) {
                 _this.refresh();
                 return false;
@@ -269,6 +268,14 @@ var CrudUI = (function () {
         return "id" + Math.random().toString(16).slice(2);
     };
     ;
+    CrudUI.prototype.empty = function (options) {
+        var _this = this;
+        $(_this.settings.filterWrapper+" :input:not([type=checkbox])").val('');
+        $(_this.settings.filterWrapper+" :input").val('');
+        $(_this.settings.filterWrapper+" :input:checked").removeAttr('checked');
+        if (this.listInstance)
+            this.listInstance.refresh();
+    }
     CrudUI.prototype.formInsert = function (options) {
         var _this = this;
         if (options === void 0) { options = {}; }

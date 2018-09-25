@@ -10,8 +10,9 @@ namespace App\Http\Controllers\Gestione\Customers;
 
 
 use App\Http\Controllers\Controller;
-use App\Repositories\Customers\CustomersRepo;
+use App\Repositories\Customers\Customers;
 use Illuminate\Http\Request;
+use \DB;
 
 class CustomersController extends Controller
 {
@@ -24,11 +25,23 @@ class CustomersController extends Controller
     }
 
     public function show(){
-        $items = CustomersRepo::query();
+        $items = Customers::orderBy('id','DESC');
+        if($this->request->search){
+            $items->where(function($q) {
+                $q->orWhere(DB::raw("concat(nome,' ',cognome)"),'like','%'.$this->request->search.'%')
+                    ->orWhere(DB::raw("concat(cognome,' ',nome)"),'like','%'.$this->request->search.'%')
+                    ->orWhere("luogo_nascita",'like','%'.$this->request->search.'%')
+                    ->orWhere("indirizzo",'like','%'.$this->request->search.'%');
+            });
+        }
+        if($this->request->sesso){
+            $items->where('sesso',$this->request->sesso);
+        }
+
         return \DataTables::of($items)->make(true);
     }
     public function form(){
-        $item = CustomersRepo::where('id',$this->request->id)->first();
+        $item = Customers::where('id',$this->request->id)->first();
         return view('gestione.anagrafiche.customers.form',compact('item'));
 
     }

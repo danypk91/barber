@@ -11,7 +11,7 @@ namespace App\Repositories\Customers;
 
 use Illuminate\Database\Eloquent\Model;
 
-class CustomersRepo extends Model
+class Customers extends Model
 {
     protected $table = 'customers';
 
