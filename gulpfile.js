@@ -62,15 +62,15 @@ elixir(function(mix) {
 //concat and uglify css libraries
 gulp.task('cssLibs', function(){
     gulp.src([
-        "/css/normalize.css",
-        'public/css/bootstrap.css',
-        "/css/font-awesome.min.css",
-        "/css/themify-icons.css",
-        "/css/flag-icon.min.css",
-        "/css/cs-skin-elastic.css",
-        "/scss/style.css",
-        "/css/lib/vector-map/jqvmap.min.css",
-        "/css/jquery-ui.css",
+        "public/css/normalize.css",
+        "public/css/font-awesome.min.css",
+        "public/css/themify-icons.css",
+        "public/css/flag-icon.min.css",
+        "public/css/cs-skin-elastic.css",
+        "public/css/bootstrap.css",
+        "public/scss/style.css",
+        "public/css/lib/vector-map/jqvmap.min.css",
+        "public/css/jquery-ui-1.10.0.custom.css",
     ])
         .on('error', errorLog)
         .pipe(minify())

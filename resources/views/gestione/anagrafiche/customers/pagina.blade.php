@@ -40,7 +40,7 @@
 @section('script')
     <script type="text/javascript">
         function renderOp(row,display,data){
-            return '<button class="btn btn-primary btn-xs" onclick=customers.formUpdate({id:'+row+'}) type="button"><i class="fa fa-pencil"></i></button>'
+            return '<button class="btn btn-primary btn-sm" onclick=customers.formUpdate({id:'+row+'}) type="button"><i class="fa fa-pencil"></i></button>'
         }
         customers= new CrudUI({
             url:"customers",

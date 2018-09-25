@@ -798,20 +798,10 @@ ul,
 ol {
   padding-left: 0; }
 
-.btn:focus,
-button:focus {
-  box-shadow: none !important;
-  outline: 0; }
 
 img {
   max-width: 100%; }
 
-.btn,
-button,
-input,
-textarea {
-  box-shadow: none;
-  outline: 0 !important; }
 
 .no-padding {
   padding: 0 !important; }
@@ -1510,16 +1500,6 @@ header .form-inline {
 .twt-footer, .twt-footer a {
   color: #d2d2d2; }
 
-/* Button Reset */
-.btn, .button {
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  transition: all .15s ease-in-out;
-  border-radius: 0;
-  cursor: pointer; }
 
 /* Icons */
 .icon-section {
@@ -1616,13 +1596,6 @@ header .form-inline {
 
 .login-form .checkbox label {
   text-transform: none; }
-
-.login-form .btn {
-  width: 100%;
-  text-transform: uppercase;
-  font-size: 14px;
-  padding: 15px;
-  border: 0px; }
 
 .login-form label {
   color: #878787;
@@ -1769,20 +1742,6 @@ header .form-inline {
   width: 100%;
   height: 400px; }
 
-.btn-toolbar {
-  float: left !important; }
-  .btn-toolbar .btn-outline-secondary:not([disabled]):not(.disabled):active,
-  .btn-toolbar .btn-outline-secondary:not([disabled]):not(.disabled).active,
-  .btn-toolbar .show > .btn-outline-secondary.dropdown-toggle {
-    background-color: #212529;
-    border-color: #212529;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    color: #fff; }
-  .btn-toolbar .btn-outline-secondary:hover {
-    background-color: #212529;
-    border-color: #212529;
-    color: #fff; }
 
 /*    Widget One
 ---------------------------*/
