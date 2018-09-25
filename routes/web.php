@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('/clienti', 'Gestione\Clienti\ClientiController');
+Route::resource('/customers', 'Gestione\Customers\CustomersController');
 Route::get('/logout', function(){
     Auth::logout();
     return Redirect::to('login');

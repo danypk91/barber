@@ -6,30 +6,30 @@
  * Time: 15:38
  */
 
-namespace App\Http\Controllers\Gestione\Clienti;
+namespace App\Http\Controllers\Gestione\Customers;
 
 
 use App\Http\Controllers\Controller;
-use App\Repositories\Nominativi\Nominativo;
+use App\Repositories\Customers\CustomersRepo;
 use Illuminate\Http\Request;
 
-class ClientiController extends Controller
+class CustomersController extends Controller
 {
     function __construct(Request $request)
     {
         $this->request = $request;
     }
     public function index(){
-        return view("gestione.anagrafiche.clienti.pagina");
+        return view("gestione.anagrafiche.customers.pagina");
     }
 
     public function show(){
-        $items = Nominativo::query();
+        $items = CustomersRepo::query();
         return \DataTables::of($items)->make(true);
     }
     public function form(){
-        $item = Nominativo::where('id',$this->request->id)->first();
-        return view('gestione.anagrafiche.clienti.form',compact('item'));
+        $item = CustomersRepo::where('id',$this->request->id)->first();
+        return view('gestione.anagrafiche.customers.form',compact('item'));
 
     }
 

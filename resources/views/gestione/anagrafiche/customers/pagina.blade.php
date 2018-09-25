@@ -40,10 +40,10 @@
 @section('script')
     <script type="text/javascript">
         function renderOp(row,display,data){
-            return '<button class="btn btn-primary btn-xs" onclick=progetti_customersUI.formUpdate({id:'+row+'}) type="button"><i class="fa fa-pencil"></i></button>'
+            return '<button class="btn btn-primary btn-xs" onclick=customers.formUpdate({id:'+row+'}) type="button"><i class="fa fa-pencil"></i></button>'
         }
-        clienti= new CrudUI({
-            url:"clienti",
+        customers= new CrudUI({
+            url:"customers",
             dialogW:'940',
             cols:[
                 {"data": "id", "title": "ID"},
@@ -55,6 +55,6 @@
             formID:'myForm'
 
         });
-        clienti.list()
+        customers.list()
     </script>
 @stop

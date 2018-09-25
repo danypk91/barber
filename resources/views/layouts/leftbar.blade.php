@@ -4,7 +4,7 @@
 
 <h3 class="menu-title">Anagrafiche</h3><!-- /.menu-title -->
 <li>
-    <a href="{{url('clienti')}}"> <i class="fa fa-user menu-icon"></i>Clienti </a>
+    <a href="{{url('customers')}}"> <i class="fa fa-user menu-icon"></i>Clienti </a>
 </li>
 
 <h3 class="menu-title">UI elements</h3><!-- /.menu-title -->

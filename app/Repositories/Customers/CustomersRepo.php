@@ -6,13 +6,13 @@
  * Time: 10:36
  */
 
-namespace App\Repositories\Nominativi;
+namespace App\Repositories\Customers;
 
 
 use Illuminate\Database\Eloquent\Model;
 
-class Nominativo extends Model
+class CustomersRepo extends Model
 {
-    protected $table = 'nominativi';
+    protected $table = 'customers';
 
 }
