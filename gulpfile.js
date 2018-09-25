@@ -27,37 +27,27 @@ elixir(function(mix) {
 
 //scriptLibs Task
 //Concat and uglify script libraries
-/*gulp.task('scriptLibs', function(){
+gulp.task('scriptLibs', function(){
     gulp.src([
-        'public/js/jquery-1.10.2.min.js',
-        'public/js/jquery-ui-1.9.2.custom.min.js',
-        'public/js/jquery-migrate-1.2.1.min.js',
-        'public/js/toastr.min.js',
-        'public/js/jquery.mark.min.js',
-        'public/js/datatables/js/jquery.dataTables.js',
-        'public/js/chosen.jquery.min.js',
-        'public/js/datatables/js/dataTables.bootstrap.js',
-        'public/js/jquery.blockUI.min.js',
-        'public/js/jquery.contextMenu.min.js',
-        'public/js/bootstrap-select.min.js',
-        'public/js/bootstrap-tagsinput/bootstrap-tagsinput.js',
-        'public/js/bootstrap3-typeahead.min.js',
-        'public/js/bootstrap-wysihtml5/wysihtml5-0.3.0.js',
-        'public/js/bootstrap-wysihtml5/bootstrap-wysihtml5.js',
-        'public/js/moment.min.js',
-        'public/js/moment.it.js',
-        'public/js/socket.io-1.2.0.js',
-        'public/js/bootstrap.min.js',
+        'public/js/jquery/jquery-1.11.3.min.js',
+        'public/js/plugins.js',
+        'public/js/popper.min.js',
+        'public/js/main.js',
+        'public/js/lib/data-table/dtable.js',
+        'public/js/lib/data-table/datatables.min.js',
+        'public/js/lib/data-table/dataTables.bootstrap.min.js',
+        'public/js/lib/data-table/dataTables.buttons.min.js',
+        'public/js/lib/data-table/datatables-init.js',
+        'public/js/jquery/jquery.blockUI.min.js',
+        'public/js/jquery/jquery-ui_1.12.1.js',
         'public/js/bootstrap-dialog.min.js',
-        'public/js/autosize.js',
-        'public/js/global.settings.js',
 
     ])
         .pipe(uglify())
         .pipe(concat('libs.min.js'))
         .pipe(gulp.dest('public/js'));
 });
-*/
+
 //cssLibs Task
 //concat and uglify css libraries
 gulp.task('cssLibs', function(){
@@ -80,4 +70,4 @@ gulp.task('cssLibs', function(){
 
 });
 
-gulp.task('default', ['cssLibs']);
+gulp.task('default', ['scriptLibs','cssLibs']);

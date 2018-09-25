@@ -13,6 +13,7 @@
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="/css/libs.css">
+    <link rel="stylesheet" href="/css/custom-css.css">
     @yield('style')
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
@@ -188,21 +189,8 @@
 
 <!-- Right Panel -->
 
-<script src="/js/jquery/jquery-2.1.4.min.js"></script>
-<script src="/js/jquery/jquery-1.11.3.min.js"></script>
-<script src="/js/popper.min.js"></script>
-<script src="/js/plugins.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/lib/data-table/dtable.js"></script>
-<script src="/js/lib/data-table/datatables.min.js"></script>
-<script src="/js/lib/data-table/datatables.min.js"></script>
-<script src="/js/lib/data-table/dataTables.bootstrap.min.js"></script>
-<script src="/js/lib/data-table/dataTables.buttons.min.js"></script>
-<script src="/js/lib/data-table/datatables-init.js"></script>
-<script src="/js/jquery/jquery.blockUI.min.js"></script>
-<script src="/js/jquery/jquery-ui_1.12.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-<script type="text/javascript" src="/js/bootstrap-dialog.min.js"></script>
+<script src="/js/libs.min.js"></script>
+<script src="/js/custom.js"></script>
 
 @yield('script')
 

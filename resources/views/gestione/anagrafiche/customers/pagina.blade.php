@@ -5,14 +5,14 @@
 
 @section('left-bar')
     <form class="filter" id="filter">
-        <div class="form-group">
+        <div class="form-group" role="">
             <label for="company" class=" form-control-label">Cerca</label>
             <input type="text" id="search" placeholder="Cerca" class="form-control">
             <span class="clearfix"></span>
         </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-outline-secondary btn-sm" style="margin-right: 5px;">Cerca</button>
-            <button type="button" class="btn btn-outline-secondary btn-sm" style="margin-right: 5px;">Svuota</button>
+        <div class="btn-group" role="group">
+            <button type="submit" class="btn btn-outline-secondary " ><i class="fa fa-search"></i> Cerca</button>
+            <button type="button" class="btn btn-outline-secondary btn-clean"><i class="fa fa-times"></i> Svuota</button>
         </div>
     </form>
 @stop

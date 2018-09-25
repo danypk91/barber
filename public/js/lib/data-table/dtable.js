@@ -118,6 +118,9 @@ var DatatableList = (function () {
         }
         this.bindFilterElements();
     };
+    DatatableList.prototype.empty = function () {
+        alert("aaa")
+    }
     DatatableList.prototype.bindFilterElements = function () {
         var _this = this;
         var filterWrapperSelector;
