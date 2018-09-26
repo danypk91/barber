@@ -25,7 +25,7 @@ class CustomersController extends Controller
     }
 
     public function show(){
-        $items = Customers::orderBy('id','DESC');
+        $items = Customers::select('*');
         if($this->request->search){
             $items->where(function($q) {
                 $q->orWhere(DB::raw("concat(nome,' ',cognome)"),'like','%'.$this->request->search.'%')

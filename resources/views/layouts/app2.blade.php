@@ -13,8 +13,9 @@
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="/css/libs.css">
-    <link rel="stylesheet" href="/css/custom-css.css">
-    @yield('style')
+    <link rel="stylesheet" href="/css/custom.css">
+
+    @yield('css')
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css">
@@ -191,6 +192,7 @@
 
 <script src="/js/lib/data-table/dtable.js"></script>
 <script src="/js/libs.min.js"></script>
+
 
 
 <script src="/js/custom.js"></script>

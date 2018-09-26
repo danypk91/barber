@@ -51,6 +51,7 @@ gulp.task('scriptLibs', function(){
 //concat and uglify css libraries
 gulp.task('cssLibs', function(){
     gulp.src([
+        "public/css/datatable-bootstrap-4.css",
         "public/css/normalize.css",
         "public/css/font-awesome.min.css",
         "public/css/themify-icons.css",

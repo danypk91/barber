@@ -79,7 +79,7 @@ var DatatableList = (function () {
             },
             "columns": settings.cols,
             "language": {
-                "sLengthMenu": LangCRUD.get("list_view", "Mostra") + " <span class='length_datatables'>_MENU_</span> ",
+                "sLengthMenu": LangCRUD.get("list_view", "") + " <span class='length_datatables'>_MENU_</span> ",
                 "sZeroRecords": settings.listEmpty,
                 "sInfo": LangCRUD.get("list_info", "_START_ - _END_ di _TOTAL_"),
                 "sInfoEmpty": "",
@@ -180,7 +180,7 @@ var CrudUI = (function () {
             listParms: {},
             trFormat: null,
             sort: [[0, 'desc']],
-            dom: "t<'clearfix table-footer'<'col-sm-5 col-md-4' li><'col-sm-7 col-md-8'p>>",
+            dom: "t<'clearfix table-footer'<'col-sm-1 col-md-1' l><'col-sm-3 col-md-3' i><'col-sm-7 col-md-8'p>>",
             listLength: 100,
             /**
              * form container settings

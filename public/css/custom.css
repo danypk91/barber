@@ -1,0 +1,40 @@
+/*
+Custom CSS
+*/
+
+.btn-outline-secondary {
+    color: #868e96;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+/*
+$btn-padding-x-xs: .38rem !default;
+$btn-padding-y-xs: .18rem !default;
+*/
+.btn-xs {
+    padding  : .25rem .4rem;
+    font-size  : .875rem;
+    line-height  : .5;
+    border-radius : .2rem;
+}
+tbody tr.current-row, tbody tr:hover{
+    background-color: rgba(242, 243, 81, 0.3) !important;
+}
+.table-footer {
+    background-color: #fff;
+    padding: 15px 10px;
+    border: 1px solid #DDD;
+    border-top: 0px;
+}
+table.dataTable{
+    margin-top:0px !important;
+    margin-bottom:0px !important;
+}
+#tabella_wrapper {
+    padding: 0 0 0 0;
+    white-space: nowrap;
+    box-shadow: rgb(153, 153, 153) 1px 1px 10px;.
+}
+table.dataTable {
+    border-collapse:collapse !important;
+}
